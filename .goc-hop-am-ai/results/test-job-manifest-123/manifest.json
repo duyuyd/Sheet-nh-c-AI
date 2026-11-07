@@ -1,0 +1,19 @@
+{
+  "job_id": "test-job-manifest-123",
+  "song_id": "nang-tho",
+  "title": "Nàng Thơ",
+  "status": "ai_draft",
+  "source_audio_sha256": "test",
+  "source_rights": "owned",
+  "model": "gemini-3.8-flash",
+  "model_revision": "gemini-3.8-flash-v2",
+  "notes_detected_in_midi": 3,
+  "notes_in_musicxml": 3,
+  "verified": false,
+  "confidence": 0.95,
+  "review_required": true,
+  "midi": "notes.mid",
+  "musicxml": "score.musicxml",
+  "pdf": null,
+  "generated_at": "2026-11-07T03:21:21.056Z"
+}

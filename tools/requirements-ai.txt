@@ -1,0 +1,4 @@
+# Optional, free local AI inference dependencies (not required by the mobile app).
+# Install only on a computer/server that runs automatic audio transcription.
+basic-pitch>=0.3,<0.5
+music21>=10,<11

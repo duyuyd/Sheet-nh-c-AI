@@ -1,0 +1,10 @@
+mobile/build/
+**/build/
+**/.gradle/
+**/xcuserdata/
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+.env*
+.DS_Store

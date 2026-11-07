@@ -1,0 +1,18 @@
+{
+  "name": "goc-hop-am-mobile",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node mobile/scripts/prepare-web.mjs",
+    "start": "node server.mjs",
+    "lint": "node --check server.mjs lib/*.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "prepare": "node mobile/scripts/prepare-web.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^3.0.0",
+    "express": "^5.3.0"
+  }
+}

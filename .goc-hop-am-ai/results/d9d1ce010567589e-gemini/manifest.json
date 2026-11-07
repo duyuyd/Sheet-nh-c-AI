@@ -1,0 +1,19 @@
+{
+  "job_id": "d9d1ce010567589e-gemini",
+  "song_id": "nang-tho-test",
+  "title": "Nàng Thơ",
+  "status": "ai_draft",
+  "source_audio_sha256": "d9d1ce010567589e",
+  "source_rights": "owned",
+  "model": "harmonic_dsp",
+  "model_revision": "gemini-3.8-flash-v2",
+  "notes_detected_in_midi": 14,
+  "notes_in_musicxml": 14,
+  "verified": false,
+  "confidence": 0.88,
+  "review_required": true,
+  "midi": "notes.mid",
+  "musicxml": "score.musicxml",
+  "pdf": null,
+  "generated_at": "2026-11-07T03:09:37.259Z"
+}

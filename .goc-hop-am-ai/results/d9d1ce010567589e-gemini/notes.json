@@ -1,0 +1,86 @@
+[
+  {
+    "midi": 60,
+    "beats": 2,
+    "chord": "C",
+    "chordNotes": [
+      48,
+      52,
+      55
+    ]
+  },
+  {
+    "midi": 62,
+    "beats": 1
+  },
+  {
+    "midi": 64,
+    "beats": 1
+  },
+  {
+    "midi": 65,
+    "beats": 2
+  },
+  {
+    "midi": 67,
+    "beats": 1,
+    "chord": "Am",
+    "chordNotes": [
+      57,
+      60,
+      64
+    ]
+  },
+  {
+    "midi": 69,
+    "beats": 0.5
+  },
+  {
+    "midi": 71,
+    "beats": 0.5
+  },
+  {
+    "midi": null,
+    "beats": 1
+  },
+  {
+    "midi": 62,
+    "beats": 0.5,
+    "chord": "F",
+    "chordNotes": [
+      53,
+      57,
+      60
+    ]
+  },
+  {
+    "midi": 64,
+    "beats": 2
+  },
+  {
+    "midi": 65,
+    "beats": 0.5
+  },
+  {
+    "midi": 67,
+    "beats": 0.5
+  },
+  {
+    "midi": 69,
+    "beats": 2,
+    "chord": "G",
+    "chordNotes": [
+      55,
+      59,
+      62
+    ]
+  },
+  {
+    "midi": 71,
+    "beats": 0.5
+  },
+  {
+    "midi": 60,
+    "beats": 1
+  }
+]

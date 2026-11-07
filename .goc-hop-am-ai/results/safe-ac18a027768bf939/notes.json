@@ -1,0 +1,66 @@
+[
+  {
+    "midi": 69,
+    "beats": 2,
+    "chord": "C"
+  },
+  {
+    "midi": 71,
+    "beats": 1
+  },
+  {
+    "midi": 73,
+    "beats": 1
+  },
+  {
+    "midi": 74,
+    "beats": 2
+  },
+  {
+    "midi": 76,
+    "beats": 1,
+    "chord": "Am"
+  },
+  {
+    "midi": 78,
+    "beats": 0.5
+  },
+  {
+    "midi": 80,
+    "beats": 0.5
+  },
+  {
+    "midi": null,
+    "beats": 1
+  },
+  {
+    "midi": 71,
+    "beats": 0.5,
+    "chord": "F"
+  },
+  {
+    "midi": 73,
+    "beats": 2
+  },
+  {
+    "midi": 74,
+    "beats": 0.5
+  },
+  {
+    "midi": 76,
+    "beats": 0.5
+  },
+  {
+    "midi": 78,
+    "beats": 2,
+    "chord": "G"
+  },
+  {
+    "midi": 80,
+    "beats": 0.5
+  },
+  {
+    "midi": 69,
+    "beats": 1
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "Góc Hợp Âm",
+  "description": "Nền tảng tra cứu hợp âm, auto-sheet MusicXML, luyện tập âm nhạc đa tính năng và ứng dụng di động",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
