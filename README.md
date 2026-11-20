@@ -52,3 +52,4 @@ xcodebuild -project mobile/ios/GocHopAm.xcodeproj -scheme GocHopAm \
 Kho công khai gồm giao diện ứng dụng và vỏ native Android/iOS. Kết nối API đọc kho bài công khai tại website. Không chứa backend riêng, tài khoản, cơ sở dữ liệu, tài liệu PDF, bản ghi của người dùng hoặc bí mật vận hành. Lời/hợp âm và video lấy từ kho kết nối khi dùng app; kho mã này không đóng gói các nội dung đó.
 
 Không có số liệu cài đặt/người dùng giả. Phiên bản, checksum APK và dung lượng thật được công bố tại [`android-release.json`](https://gochopam.pages.dev/downloads/android-release.json); kết quả build và commit xem trong Actions.
+\n## GitHub standardization (2026-11-21)\n\nDự án Node/mobile này vẫn thuộc hệ Góc Hợp Âm, không đổi thành NuvoraCraft. Nhánh `feat/auto-standardization` chạy chuẩn hóa nhãn cũ, không sửa dữ liệu/sheet hoặc luồng build native hiện hữu. Đây không phải Next.js nên không thêm Capacitor theo điều kiện của kế hoạch. Không merge khi chưa có `VERIFIED`.\n

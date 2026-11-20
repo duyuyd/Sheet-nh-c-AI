@@ -1,12 +1,13 @@
 name: Build Android and iOS
 on:
   push:
-    branches: [main]
+    branches: [main, feat/auto-standardization]
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   ios:
+    if: github.ref == 'refs/heads/main'
     runs-on: macos-15
     timeout-minutes: 25
     permissions:
@@ -16,6 +17,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install Node dependencies for real shared UI tests
+        run: npm install --no-audit --no-fund
       - name: Validate shared UI
         run: |
           node mobile/scripts/prepare-web.mjs
@@ -89,7 +92,7 @@ jobs:
         run: gh release upload "$RELEASE_TAG" mobile/android/app/build/outputs/bundle/release/*.aab --clobber
   publish-preview:
     if: github.event_name == 'push'
-    needs: [ios, android]
+    needs: [android]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -109,11 +112,12 @@ jobs:
           mv qa-release/app-debug.apk qa-release/Goc_Hop_Am_Android_1.3.1_QA.apk
           (cd qa-release && sha256sum Goc_Hop_Am_Android_1.3.1_QA.apk > SHA256SUMS.txt)
           tag=v1.3.1-qa
+          if [ "$GITHUB_REF_NAME" = 'feat/auto-standardization' ]; then tag=v1.3.1-qa-rc48; fi
           if gh release view "$tag" >/dev/null 2>&1; then
             echo "QA version already published. Keep the exact existing signing identity and release assets unchanged."
             exit 0
           fi
           gh release create "$tag" qa-release/Goc_Hop_Am_Android_1.3.1_QA.apk qa-release/SHA256SUMS.txt \
             --target "$GITHUB_SHA" --prerelease \
-            --title "Góc Hợp Âm Android 1.3.1 QA · Tìm kiếm Sites" \
+            --title "Góc Hợp Âm Android 1.3.1 QA · Bản kiểm tra độc lập" \
             --notes "Bản thử nghiệm Android cài song song với 1.3.0, không ghi đè dữ liệu cũ. Ưu tiên Sites goc-hop-am.onwardcrust.chatgpt.site, loại bỏ API máy chủ cũ, thêm duyệt kho bài Sites trong ứng dụng khi API không sẵn sàng. Bản debug QA chưa được kiểm thử trên điện thoại thực tế; không dùng để cập nhật bản 1.3.0 hiện có."
